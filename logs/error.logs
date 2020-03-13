@@ -1,0 +1,10 @@
+2020-23-13 10:23:31.262 [main] ERROR PasswordCheckerLogs - password should be longer than 8 characters
+2020-23-13 10:23:31.263 [main] ERROR PasswordCheckerLogs - 
+2020-05-13 14:05:18.173 [main] ERROR PasswordCheckerLogs - password should have at least one uppercase letter
+2020-05-13 14:05:18.174 [main] ERROR PasswordCheckerLogs - 
+2020-08-13 14:08:36.989 [main] ERROR PasswordCheckerLogs - password should be longer than 8 characters
+2020-08-13 14:08:36.989 [main] ERROR PasswordCheckerLogs - 
+2020-10-13 14:10:20.400 [main] ERROR PasswordCheckerLogs - password should have at least one uppercase letter
+2020-10-13 14:10:20.400 [main] ERROR PasswordCheckerLogs - 
+2020-11-13 14:11:34.700 [main] ERROR PasswordCheckerLogs - password should have at least one uppercase letter
+2020-11-13 14:11:34.701 [main] ERROR PasswordCheckerLogs - 

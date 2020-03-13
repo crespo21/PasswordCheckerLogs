@@ -1,8 +1,8 @@
-import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import java.io.IOException;
 import java.util.Scanner;
-import java.util.logging.*;
+
 
 public class PasswordCheckerLogs {
     private final static Logger LOGGER = LogManager.getLogger(PasswordCheckerLogs.class.getName());
@@ -18,73 +18,62 @@ public class PasswordCheckerLogs {
         String msg = "";
         if (password.isEmpty()) {
             passwordExist = false;
-            msg = "password should exist";
+                LOGGER.error("password should exist");
         }
         else if (password.length() < 8 ){
             passwordCharLength = false;
-            msg = "password should be longer than 8 characters";
+            LOGGER.error( "password should be longer than 8 characters");
         }
         else if (!password.matches((".*[A-Z].*"))){
             passwordUpperCase = true;
-            msg="password should have at least one uppercase letter";
+            LOGGER.error("password should have at least one uppercase letter");
         }
         else if (!password.matches((".*[a-z].*"))){
             passwordLowerCase = false;
-            msg="password should have at least one lowercase letter";
+            LOGGER.error("password should have at least one lowercase letter");
         }
         else if (!password.matches((".*[\\d].*"))){
             passwordOneDigit = false;
-            msg="password should have at least one digit";
+            LOGGER.error("password should have at least one digit");
         }
-        else if (!password.matches((".*[-!@#$%^&*(){}_\"\"';|?/.>,<:].*"))){
+        else if (!password.matches((".*[-!@#$%^+&*(=){}_\"\"';|?/.>,<:].*"))){
             passwordOneSpecialChar = false;
-            msg="password should have at least one special character";
+            LOGGER.error("password should have at least one special character");
         }
         else{
-            msg="Password is valid!";
+            LOGGER.error("Password is valid!");
         }
         return msg ;
     }
-    public static  boolean passwordIsOk(String password){
+    public static  boolean passwordIsOk(String password)throws Exception{
         boolean check;
         if(!password.isEmpty() && password.length() >= 8 && password.matches((".*[A-Z].*")) ){
-
-            LOGGER.debug("Password is Ok!");
+                LOGGER.debug("User password is ok!");
             check =true;
         } else{
-            LOGGER.debug("password is not ok,");
+                LOGGER.debug("User password is not ok,");
             check = false;
         }
         return check;
     }
-    public static void main(String[] args)  {
+    public static void main(String[] args) throws Exception {
         Scanner input = new Scanner(System.in);
         System.out.println("(Please Note: Your password shouldn't be empty," +
                 "\n must be longer than 8 characters," +
                 "\n contains at least one Uppercase,lowercase letter," +
-                "\none digit and a special character(one of these :\"&%^4\").)");
+                "\none digit and a special character)");
         System.out.println("");
         System.out.println("Please enter your password");
         String userPassword = input.nextLine();
         try {
-            System.out.println(password_is_valid(userPassword));
-            System.out.println(passwordIsOk(userPassword));
+            LOGGER.debug(passwordIsOk(userPassword));
+            LOGGER.error(password_is_valid(userPassword));
         }
-        catch (Exception e){
+        catch (IOException e){
             System.out.println(e.getMessage());
-        }
-//        LogManager.getLogManager().reset();
-//        LOGGER.setLevel(Level.SEVERE);
-//        ConsoleHandler ch = new ConsoleHandler();
-//        LOGGER.addHandler(ch);
-//
-//        LOGGER.setLevel(Level.FINE);
-//        FileHandler fh = new   FileHandler("passwordLog.log");
-//        LOGGER.addHandler(fh);
-//
-//        LOGGER.info("Password should exist");
 
-//
+        }
+
     }
 }
 
