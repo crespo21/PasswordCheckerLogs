@@ -17,3 +17,27 @@
 2020-42-17 12:42:30.045 [main] ERROR PasswordCheckerLogs - password should have at least one uppercase letter
 2020-42-17 12:42:30.046 [main] ERROR PasswordCheckerLogs - 
 2020-42-17 12:42:30.046 [main] ERROR PasswordCheckerLogs - true
+2020-34-17 14:34:48.072 [main] ERROR PasswordCheckerLogs - password should have at least one uppercase letter
+2020-34-17 14:34:48.073 [main] ERROR PasswordCheckerLogs - 
+2020-34-17 14:34:48.073 [main] ERROR PasswordCheckerLogs - true
+2020-36-17 14:36:04.369 [main] ERROR PasswordCheckerLogs - password should have at least one uppercase letter
+2020-36-17 14:36:04.369 [main] ERROR PasswordCheckerLogs - 
+2020-36-17 14:36:04.370 [main] ERROR PasswordCheckerLogs - true
+2020-02-17 15:02:32.374 [Test worker] ERROR PasswordCheckerLogs - password should be longer than 8 characters
+2020-02-17 15:02:32.416 [Test worker] ERROR PasswordCheckerLogs - password should have at least one lowercase letter
+2020-02-17 15:02:32.423 [Test worker] ERROR PasswordCheckerLogs - password should have at least one digit
+2020-02-17 15:02:32.427 [Test worker] ERROR PasswordCheckerLogs - Password is valid!
+2020-02-17 15:02:32.441 [Test worker] ERROR PasswordCheckerLogs - password should have at least one special character
+2020-02-17 15:02:32.450 [Test worker] ERROR PasswordCheckerLogs - password should have at least one uppercase letter
+2020-02-17 15:02:32.455 [Test worker] ERROR PasswordCheckerLogs - password should exist
+2020-04-17 15:04:34.712 [Test worker] ERROR PasswordCheckerLogs - Empty passwords are invalid!
+2020-04-17 15:04:34.719 [Test worker] ERROR PasswordCheckerLogs - Password must be 8 characters long!
+2020-06-17 15:06:32.589 [Test worker] ERROR PasswordCheckerLogs - password should exist
+2020-12-17 15:12:28.372 [Test worker] ERROR PasswordCheckerLogs - password should have at least one uppercase letter
+2020-12-17 15:12:34.749 [Test worker] ERROR PasswordCheckerLogs - password should have at least one uppercase letter
+2020-12-17 15:12:44.126 [Test worker] ERROR PasswordCheckerLogs - password should be longer than 8 characters
+2020-12-17 15:12:52.025 [Test worker] ERROR PasswordCheckerLogs - password should be longer than 8 characters
+2020-13-17 15:13:09.028 [Test worker] ERROR PasswordCheckerLogs - password should have at least one uppercase letter
+2020-13-17 15:13:33.066 [Test worker] ERROR PasswordCheckerLogs - password should be longer than 8 characters
+2020-13-17 15:13:38.792 [Test worker] ERROR PasswordCheckerLogs - password should have at least one uppercase letter
+2020-13-17 15:13:51.164 [Test worker] ERROR PasswordCheckerLogs - password should have at least one digit

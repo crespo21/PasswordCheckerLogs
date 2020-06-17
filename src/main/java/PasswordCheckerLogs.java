@@ -1,5 +1,7 @@
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+
+import java.io.IOException;
 import java.util.Scanner;
 
 
@@ -70,10 +72,13 @@ public class PasswordCheckerLogs {
         if (password.length() == 0 && !password.matches((".*[A-Z].*"))) {
             passwordIsOkChecker = false;
             LOGGER.debug("Password not ok!");
-        } else if (!password.matches((".*[a-z].*")) || !password.matches((".*[\\d].*")) || !password.matches((".*[-!@#$%^&*(){}_\"'\\\\;|?/.>,<:].*"))) {
+        }
+        else if (!password.matches((".*[a-z].*")) || !password.matches((".*[\\d].*"))
+                   || !password.matches((".*[-!@#$%^&*(){}_\"'\\\\;|?/.>,<:].*"))) {
             passwordIsOkChecker = false;
             LOGGER.debug("Password is not ok!");
-        } else {
+        }
+        else {
             passwordIsOkChecker = true;
             LOGGER.debug("password is ok!");
         }

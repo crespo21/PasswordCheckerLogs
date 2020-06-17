@@ -1,1 +1,1 @@
-E2020-03-09 15:02:30,071 | PasswordCheckerLogs: password should exist
+_15:13:51.164 [Test worker] ERROR PasswordCheckerLogs - password should have at least one digit
