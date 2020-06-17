@@ -9,37 +9,37 @@ public class PasswordCheckerTestLog {
     @Test
     public void  exisitingPassword() throws IOException {
 
-        assertEquals("",PasswordCheckerLogs.password_is_valid(""));
+        assertEquals("",PasswordCheckerLogs.passwordIsValid(""));
     }
     @Test
     public  void passwordLength() throws IOException {
         assertEquals("",
-                PasswordCheckerLogs.password_is_valid("abcdefg"));
+                PasswordCheckerLogs.passwordIsValid("abcdefg"));
 
     }
     @Test
     public  void upperCasePassword() throws IOException {
         assertEquals("",
-                PasswordCheckerLogs.password_is_valid("abcdefghi"));
+                PasswordCheckerLogs.passwordIsValid("abcdefghi"));
     }
     @Test
     public  void lowerCasePassword() throws IOException {
         assertEquals("",
-                PasswordCheckerLogs.password_is_valid("ABCDEFGHI"));
+                PasswordCheckerLogs.passwordIsValid("ABCDEFGHI"));
     }
     @Test
     public  void digitPassword() throws IOException {
         assertEquals("",
-                PasswordCheckerLogs.password_is_valid("asdfghjkJ"));
+                PasswordCheckerLogs.passwordIsValid("asdfghjkJ"));
     }@Test
     public  void passwordSpecialChar() throws IOException {
         assertEquals("",
-                PasswordCheckerLogs.password_is_valid("Asdfghjkt6"));
+                PasswordCheckerLogs.passwordIsValid("Asdfghjkt6"));
     }
     @Test
     public  void passwordIsValid() throws IOException {
         assertEquals("",
-                PasswordCheckerLogs.password_is_valid("asdfghjkJ9!"));
+                PasswordCheckerLogs.passwordIsValid("asdfghjkJ9!"));
     }
     @Test
     public  void passwordIsOk() {
