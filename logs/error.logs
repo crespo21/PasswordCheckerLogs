@@ -14,3 +14,6 @@
 2020-30-17 12:30:57.103 [main] ERROR PasswordCheckerLogs - password should have at least one special character
 2020-30-17 12:30:57.104 [main] ERROR PasswordCheckerLogs - 56543TLk
 2020-30-17 12:30:57.104 [main] ERROR PasswordCheckerLogs - true
+2020-42-17 12:42:30.045 [main] ERROR PasswordCheckerLogs - password should have at least one uppercase letter
+2020-42-17 12:42:30.046 [main] ERROR PasswordCheckerLogs - 
+2020-42-17 12:42:30.046 [main] ERROR PasswordCheckerLogs - true

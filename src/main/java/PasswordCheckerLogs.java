@@ -20,10 +20,10 @@ public class PasswordCheckerLogs {
     // statement returns a string type error log message.
     // passwordIsValid method returns the parameter of type String 'password'.
     public static String passwordIsValid(String password) {
-//        String msg = "";
+        String msg = "";
         if (password.isEmpty()) {
             passwordExist = false;
-                LOGGER.error("password should exist");
+               LOGGER.error("password should exist");
         }
         else if (password.length() < 8 ){
             passwordCharLength = false;
@@ -48,7 +48,7 @@ public class PasswordCheckerLogs {
         else{
             LOGGER.error("Password is valid!");
         }
-        return password ;
+        return msg ;
     }
 
     //passwordIsOk method checks if the given password meets
@@ -72,7 +72,7 @@ public class PasswordCheckerLogs {
             LOGGER.debug("Password not ok!");
         } else if (!password.matches((".*[a-z].*")) || !password.matches((".*[\\d].*")) || !password.matches((".*[-!@#$%^&*(){}_\"'\\\\;|?/.>,<:].*"))) {
             passwordIsOkChecker = false;
-            LOGGER.debug("Password not ok!");
+            LOGGER.debug("Password is not ok!");
         } else {
             passwordIsOkChecker = true;
             LOGGER.debug("password is ok!");
